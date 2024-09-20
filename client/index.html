@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Min, Max Average</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 class="text-center">Find the Min, Max, and Average</h1>
+        </header>
+        <div class="row mb-5">
+            <div class="mx-auto" style="width: 40rem;">
+                <div id="error" class="alert alert-danger hidden" role="alert"></div>
+                <form class="text-center" id="minMacAvgFrom">
+                    <label class="form-label" for="values">Please enter the values separated by commas:</label>
+                    <input class="form-control mb-5" type="text" name="values" id="values">
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="card mx-auto">
+                <div class="card-header">
+                    <h3>Using Math Functions</h3>
+                </div>
+                <div class="card-body">
+                    <div> Min: <span class="ms-3" id="minMath"></span></div>
+                    <div> Max: <span class="ms-3" id="maxMath"></span></div>
+                    <div> Avg: <span class="ms-3" id="avgMath"></span></div>
+                    <div> Time in ms: <span class="ms-3" id="timeMath"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card mx-auto">
+                <div class="card-header">
+                    <h3>Using Array Sort</h3>
+                </div>
+                <div class="card-body">
+                    <div> Min: <span class="ms-3" id="minSort"></span></div>
+                    <div> Max: <span class="ms-3" id="maxSort"></span></div>
+                    <div> Avg: <span class="ms-3" id="avgSort"></span></div>
+                    <div> Time in ms: <span class="ms-3" id="timeSort"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="card mx-auto">
+                <div class="card-header">
+                    <h3>Using Array Custom Sort Algorithm</h3>
+                </div>
+                <div class="card-body">
+                    <div> Min: <span class="ms-3" id="minCustom"></span></div>
+                    <div> Max: <span class="ms-3" id="maxCustom"></span></div>
+                    <div> Avg: <span class="ms-3" id="avgCustom"></span></div>
+                    <div> Time in ms: <span class="ms-3" id="timeCustom"></span></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/index.js"></script>
+    </div>
+</body>
+
+</html>

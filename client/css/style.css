@@ -1,0 +1,15 @@
+form {
+    width: 40rem;
+}
+
+.card {
+    width: 40rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.btn {
+    background-color: #f8f8f8
+}
