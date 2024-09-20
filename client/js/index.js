@@ -2,7 +2,7 @@ const formSubmit = (e) => {
   e.preventDefault();
 
   const values = document.getElementById("values").value;
-  fetch("http://localhost:4003/api/minmaxavg/", {
+  fetch("/api/minmaxavg/", {
     method: "POST",
     body: JSON.stringify({ values }),
     headers: { "Content-Type": "application/json" },
