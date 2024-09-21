@@ -7,7 +7,9 @@ const MinMaxAvgCard = (props) => {
   return (
     <Row>
       <Card className="mx-auto mb-5" style={{ width: "40rem" }}>
-        <Card.Header>{title}</Card.Header>
+        <Card.Header>
+          <h3>{title}</h3>
+        </Card.Header>
         <Card.Body>
           <div>
             Min: <span className="ms-3">{values.min}</span>
